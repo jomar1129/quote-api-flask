@@ -16,7 +16,7 @@ submitButton.addEventListener("click", () => {
     <h3>Congrats, your quote was added!</h3>
     <div class="quote-text">${quote}</div>
     <div class="attribution">- ${person}</div>
-    <p>Go to the <a href="index.html">home page</a> to request and view all quotes.</p>
+    <p>Go to the <a href="/">home page</a> to request and view all quotes.</p>
     `;
       newQuoteContainer.appendChild(newQuote);
     });
