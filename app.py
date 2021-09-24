@@ -13,6 +13,10 @@ CORS(app)
 def index():
     return render_template('index.html')
 
+@app.route('/add-quote')
+def addQuote():
+    return render_template('add-quote.html')
+
 
 #getRandomElement
 def getRandomElement():
