@@ -3,6 +3,9 @@ from flask import Flask , render_template , request ,json, url_for , Response
 import random
 from flask_cors import CORS
 from data import quotes
+
+
+
 app = Flask(__name__ , static_url_path='')
 CORS(app)
 
@@ -12,6 +15,10 @@ CORS(app)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/test/jose')
+def testName(name):
+    return json.jsonify({"myName" : "jose"})
 
 @app.route('/add-quote')
 def addQuote():
